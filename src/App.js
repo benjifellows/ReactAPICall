@@ -20,11 +20,13 @@ function Display(props) {
   );
 }
 
+
+
 function App() {
 	const [response, setResponse] = React.useState(0);
-  const makeRequest = () => setResponse(
+  const makeRequest = () =>
         fetch('https://7h1a1zzgya.execute-api.eu-west-1.amazonaws.com/default/HelloBenji')
-        );
+        ;
 	return (
     <div className = "App">
       <Button onClickFunction={makeRequest}  />
@@ -37,3 +39,10 @@ function App() {
 
 
 export default App;
+
+
+class Splash extends Component {
+
+
+
+}
