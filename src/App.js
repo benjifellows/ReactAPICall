@@ -21,6 +21,7 @@ function Display(props) {
 }
 
 
+
 function App() {
 	const [response, setResponse] = React.useState(0);
   const makeRequest = () =>
@@ -38,3 +39,10 @@ function App() {
 
 
 export default App;
+
+
+class Splash extends Component {
+
+
+
+}
