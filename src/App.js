@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-// import Background from "./Background.js";
-// import Button from "./Button.js";
 //import { makeStyles, useTheme } from '@material-ui/core/styles'
 
 function Button(props) {
@@ -23,13 +21,12 @@ function App() {
   const makeRequest = () =>
     fetch("https://randomuser.me/api/?results=1")
       .then(results => {
+        console.log("Results", results);
         return results.json();
       })
       .then(data => {
-        console.log(data);
-
+        console.log("Data", data);
         let pictures = data.results[0].email;
-        console.log("state", pictures);
         setResponse(pictures);
       });
 
